@@ -13,12 +13,10 @@ const leaderRouter = require('./routes/leaderRoute');
 const promnoRouter = require('./routes/PromoRouter');
 
 
-app.use('/dishes', dishRouter);
-app.use('/dishes/:dishId', dishRouter);
+app.use('/dishes', dishRouter)
 app.use('/leader', leaderRouter);
-app.use('/leader/:leaderId', leaderRouter);
 app.use('/promo', promnoRouter);
-app.use('/promo/:promoId', promnoRouter);
+
 
 app.listen(port, hostname, () => {
   console.log(`Server listening to port number  ${port}`);

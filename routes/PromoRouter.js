@@ -23,7 +23,7 @@ promoRouter.route('/')
     res.end('deleting...');
   });
 
-promoRouter.route('/:dishId')
+promoRouter.route('/:promoId')
   .all((req, res, next) => {
     res, statusCode = 200;
     res.setHeader('COntent-Type', 'text/plain');
