@@ -38,7 +38,7 @@ promoRouter.route('/:promoId')
     res.end('promos are in post: ' + req.body.name + ' with param' + req.params.promoId);
   })
   .put((req, res, next) => {
-    res.end('updated promo are in put: ' + req.body.name + ' and id :' + req.body.id + 'with param' + req.params.promoId);
+    res.end('updated promos are in put: ' + req.body.name + ' and id :' + req.body.id + 'with param' + req.params.promoId);
   })
   .delete((req, res, next) => {
     res.end('deleting...' + 'with param' + req.params.promoId);
