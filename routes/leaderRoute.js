@@ -35,13 +35,13 @@ leaderRouter.route('/:leaderId')
   })
 
   .post((req, res, next) => {
-    res.end('leaders are in post: ' + req.body.name + ' with param' + req.params.dishId);
+    res.end('leaders are in post: ' + req.body.name + ' with param' + req.params.leaderId);
   })
   .put((req, res, next) => {
-    res.end('updated leaders are in put: ' + req.body.name + ' and id :' + req.body.id + 'with param' + req.params.dishId);
+    res.end('updated leaders are in put: ' + req.body.name + ' and id :' + req.body.id + 'with param' + req.params.leaderId);
   })
   .delete((req, res, next) => {
-    res.end('deleting...' + 'with param' + req.params.dishId);
+    res.end('deleting...' + 'with param' + req.params.leaderId);
   });
 
 
